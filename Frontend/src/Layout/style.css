@@ -1,0 +1,48 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app-container.light {
+  background-color: white;
+  color: black;
+}
+
+.app-container.dark {
+  background-color: #333;
+  color: white;
+}
+
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.layout-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.layout-controls {
+  margin-bottom: 20px;
+}
+
+.theme-switcher {
+  margin-bottom: 20px;
+}
+
+/* Estilos específicos para o tema escuro */
+.dark .sidebar {
+  background-color: #222;
+}
+
+.dark .layout-item {
+  border-color: #555;
+}
